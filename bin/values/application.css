@@ -1,0 +1,21 @@
+/* JavaFX CSS - Leave this/* styles.css */
+.search-box_{
+	-fx-background-color: #FFFF;
+	-fx-background-radius: 10;
+}
+.tranparent{
+	-fx-background-color: rgba(0,0,0,0);
+}
+.search-button{
+	-fx-background-color: #828282;
+	-fx-background-radius: 30;
+}
+.right-bar{
+	-fx-background-color: #D3D3D3;
+}
+.shadow{
+	-fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.1),10.0,0.0,0.0,10.0);
+}
+
+
+

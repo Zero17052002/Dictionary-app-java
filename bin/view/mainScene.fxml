@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="614.0" prefWidth="935.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="16.0" layoutY="13.0" prefHeight="588.0" prefWidth="286.0" stylesheets="@../Values/application.css">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="286.0" styleClass="shadow" stylesheets="@../Values/application.css">
+               <children>
+                  <ImageView fitHeight="108.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Dictionary.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label prefHeight="30.0" prefWidth="166.0" text="Dictionary app">
+                     <font>
+                        <Font name="Cambria Math" size="25.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="242.0" prefWidth="286.0" stylesheets="@../Values/application.css">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="140.0" stylesheets="@../Values/application.css" text="Dashboard" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/Home.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="search-button" />
+                              <String fx:value="tranparent" />
+                           </styleClass>
+                           <font>
+                              <Font name="Cambria Math" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="140.0" styleClass="search-button" stylesheets="@../Values/application.css" text="Edit" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/Create.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Cambria Math" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="140.0" stylesheets="@../Values/application.css" text="GoogleAPI" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/Google%20Translate%20New.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Cambria Math" size="15.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="shadow" />
+                              <String fx:value="search-button" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="140.0" stylesheets="@../Values/application.css" text="Game" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/Game%20Controller.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="search-button" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                           <font>
+                              <Font name="Cambria Math" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Magnifier%20with%20a%20book,%20search%20for%20information,%20learning.png" />
+               </image>
+            </ImageView>
+         </children>
+         <styleClass>
+            <String fx:value="search-box_" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </VBox>
+      <Pane layoutX="318.0" prefHeight="614.0" prefWidth="618.0">
+         <children>
+            <VBox alignment="CENTER" layoutX="15.0" layoutY="14.0" prefHeight="154.0" prefWidth="589.0" stylesheets="@../Values/application.css">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <children>
+                  <Label alignment="CENTER" prefHeight="47.0" prefWidth="475.0" text="Welcome to the application of the shrimp" textAlignment="CENTER">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="550.0" stylesheets="@../Values/application.css">
+                     <children>
+                        <TextField alignment="CENTER" prefHeight="43.0" prefWidth="351.0" promptText="Please search here" stylesheets="@../Values/application.css">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="43.0" prefWidth="110.0" styleClass="search-button" stylesheets="@../Values/application.css" text="Search" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets bottom="3.0" left="10.0" right="3.0" top="3.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Cambria Math" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <styleClass>
+                  <String fx:value="search-box_" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </VBox>
+            <TableView layoutX="15.0" layoutY="195.0" prefHeight="403.0" prefWidth="589.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

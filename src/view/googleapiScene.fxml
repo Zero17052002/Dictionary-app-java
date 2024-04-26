@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.googleapiSceneController">
+   <children>
+      <VBox layoutX="82.0" layoutY="71.0" prefHeight="239.0" prefWidth="170.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="EngLish" wrappingWidth="81.16522216796875">
+               <font>
+                  <Font name="Cambria Math" size="19.0" />
+               </font>
+            </Text>
+            <TextField fx:id="input_EN" prefHeight="223.0" prefWidth="226.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="368.0" layoutY="71.0" prefHeight="239.0" prefWidth="170.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vietnamese" wrappingWidth="103.56524658203125">
+               <font>
+                  <Font name="Cambria Math" size="19.0" />
+               </font>
+            </Text>
+            <TextField fx:id="input_VN" prefHeight="223.0" prefWidth="226.0" />
+         </children>
+      </VBox>
+      <Button fx:id="Translate" layoutX="274.0" layoutY="324.0" mnemonicParsing="false" onAction="#btnTranslate" text="Translate" />
+      <Text fx:id="getText" layoutX="82.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="170.39999999999986" />
+   </children>
+</AnchorPane>

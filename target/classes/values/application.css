@@ -1,0 +1,52 @@
+/* JavaFX CSS - Leave this/* styles.css */
+.search-box_{
+	-fx-background-color: #FFFF;
+	-fx-background-radius: 10;
+}
+.tranparent{
+	-fx-background-color: rgba(0,0,0,0);
+}
+.search-button{
+	-fx-background-color: #828282;
+	-fx-background-radius: 30;
+}
+.right-bar{
+	-fx-background-color: #D3D3D3;
+}
+.shadow{
+	-fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.1),10.0,0.0,0.0,10.0);
+}
+.add-button{
+	-fx-background-color: #FFFFFF;
+	-fx-background-radius: 30;
+}
+.update-button{
+	-fx-background-color: #FF9933;
+	-fx-background-radius: 30;
+}
+.delete-button{
+	-fx-background-color: #FFFFFF;
+	-fx-background-radius: 30;
+}
+.edit-button{
+	-fx-background-color: #FF9933;
+	-fx-background-radius: 30;
+	}
+.answer1-button{
+	-fx-background-color: #FF9933;
+	 -fx-background-radius: 5 20 5 20;
+}
+.answer2-button{
+	-fx-background-color: #AAAAAA;
+	-fx-background-radius: 20 5 20 5;
+}
+.answer3-button{
+	-fx-background-color: #00EE00;
+	-fx-background-radius: 20 5 20 5;
+}
+.answer4-button{
+	-fx-background-color: #B9D3EE;
+	-fx-background-radius:  5 20 5 20;
+}
+
+
