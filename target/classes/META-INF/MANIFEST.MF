@@ -1,13 +1,13 @@
 Manifest-Version: 1.0
 Build-Jdk-Spec: 17
-Class-Path: gson-2.8.8.jar extentreports-5.1.1.jar rxjava-3.1.6.jar reac
- tive-streams-1.0.4.jar freemarker-2.3.32.jar lombok-1.18.26.jar json-20
- 210307.jar httpclient-4.5.13.jar httpcore-4.4.13.jar commons-logging-1.
- 2.jar commons-codec-1.11.jar okhttp-4.9.1.jar okio-2.8.0.jar kotlin-std
- lib-common-1.4.0.jar kotlin-stdlib-1.4.10.jar annotations-13.0.jar java
- fx-fxml-18.jar javafx-fxml-18-win.jar javafx-controls-18.jar javafx-con
- trols-18-win.jar javafx-graphics-18.jar javafx-graphics-18-win.jar java
- fx-base-18.jar javafx-base-18-win.jar
+Class-Path: javafx-fxml-18.jar javafx-fxml-18-win.jar javafx-controls-18
+ .jar javafx-controls-18-win.jar javafx-graphics-18.jar javafx-graphics-
+ 18-win.jar javafx-base-18.jar javafx-base-18-win.jar gson-2.8.8.jar ext
+ entreports-5.1.1.jar rxjava-3.1.6.jar reactive-streams-1.0.4.jar freema
+ rker-2.3.32.jar lombok-1.18.26.jar json-20210307.jar httpclient-4.5.13.
+ jar httpcore-4.4.13.jar commons-logging-1.2.jar commons-codec-1.11.jar 
+ okhttp-4.9.1.jar okio-2.8.0.jar kotlin-stdlib-common-1.4.0.jar kotlin-s
+ tdlib-1.4.10.jar annotations-13.0.jar
 Main-Class: application.Main
 Created-By: Maven Integration for Eclipse
 

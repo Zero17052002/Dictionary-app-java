@@ -30,6 +30,5 @@
          </children>
       </VBox>
       <Button fx:id="Translate" layoutX="274.0" layoutY="324.0" mnemonicParsing="false" onAction="#btnTranslate" text="Translate" />
-      <Text fx:id="getText" layoutX="82.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="170.39999999999986" />
    </children>
 </AnchorPane>

@@ -1,14 +1,9 @@
 package application;
-import java.util.logging.Level;
-
-import controller.googleapiSceneController;
-import googleAPI.TranslateAPI;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import models.TranslationResponse;
 
 /**
  * The Main class for the Dictionary application. Extends Application class
@@ -53,9 +48,6 @@ public class Main extends Application {
 		// Set the scene for the primary stage
 		primaryStage.setScene(scene);
 		primaryStage.show();
-		 TranslateAPI api = new TranslateAPI();
-	     TranslationResponse translationResponse = api.translate("Hello");
-	        
 
 	}
 }

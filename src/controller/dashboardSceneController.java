@@ -8,9 +8,11 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.ResourceBundle;
 
-import database.Database_management; // Import database management class
+import databaseDAO.Database_management;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -95,10 +97,13 @@ public class dashboardSceneController implements Initializable {
      * Search for data based on the input search text.
      * @param event The action event triggering the search
      */
+    private Map<String, String> searchCache = new HashMap<>();
+
     @FXML
     void btnSearch(ActionEvent event) {
         // Get search text from the text field
         String searchText = id_textField.getText().trim();
+
         if (!isValidInput(searchText)) {
             // Display error message if the input is invalid
             System.out.println("Invalid input. Please enter alphabetic or numeric characters only.");
@@ -106,13 +111,25 @@ public class dashboardSceneController implements Initializable {
         }
 
         if (!searchText.isEmpty()) {
-            if (searchText.matches("\\d+")) {
-                searchById(searchText);
+            // Check the cache first
+            if (searchCache.containsKey(searchText)) {
+                // If found in cache, use cached result
+                System.out.println("Cached result: " + searchCache.get(searchText));
             } else {
-                searchByEnglishWord(searchText);
+                // Perform search if not found in cache
+                String result;
+                if (searchText.matches("\\d+")) {
+                    result = searchById(searchText);
+                } else {
+                    result = searchByEnglishWord(searchText);
+                }
+                // Store the result in cache
+                searchCache.put(searchText, result);
+                System.out.println("Search result: " + result);
             }
         }
     }
+    
 
     /**
      * Perform text-to-speech upon clicking the loudspeaker icon.
@@ -183,7 +200,7 @@ public class dashboardSceneController implements Initializable {
      * Search for data by ID in the database.
      * @param id The ID to search for
      */
-    private void searchById(String id) {
+    private String searchById(String id) {
         connection = Database_management.connectDb();
         if (connection != null) {
             try {
@@ -210,13 +227,14 @@ public class dashboardSceneController implements Initializable {
         } else {
             System.out.println("Failed to connect to the database.");
         }
+        return id;
     }
 
     /**
      * Search for data by English word in the database.
      * @param englishWord The English word to search for
      */
-    private void searchByEnglishWord(String englishWord) {
+    private String searchByEnglishWord(String englishWord) {
         connection = Database_management.connectDb();
         if (connection != null) {
             try {
@@ -243,5 +261,6 @@ public class dashboardSceneController implements Initializable {
         } else {
             System.out.println("Failed to connect to the database.");
         }
+        return englishWord;
     }
 }
